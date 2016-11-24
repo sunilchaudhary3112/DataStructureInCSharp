@@ -92,23 +92,46 @@ namespace DataStructureInCSharp
 
             //4. Binary Search Tree
             //**// Start of Binary Serach Tree code
-            BST tree = new BST();
-            tree.insert(4);
-            tree.insert(2);
-            tree.insert(3);
-            tree.insert(1);
-            tree.insert(5);
-            tree.insert(6);
-            tree.insert(7);
-            BSTNode nodeSearched = tree.search(tree.root, 5);
-            Console.WriteLine("Node is " + nodeSearched.data);
-            Console.WriteLine("Inorder traversal");
-            tree.inorder(tree.root);
-            Console.ReadLine();
-            tree.delete(6);
-            tree.inorder(tree.root);
-            Console.ReadLine();
+            //BST tree = new BST();
+            //tree.insert(4);
+            //tree.insert(2);
+            //tree.insert(3);
+            //tree.insert(1);
+            //tree.insert(5);
+            //tree.insert(6);
+            //tree.insert(7);
+            //BSTNode nodeSearched = tree.search(tree.root, 5);
+            //Console.WriteLine("Node is " + nodeSearched.data);
+            //Console.WriteLine("Inorder traversal");
+            //tree.inorder(tree.root);
+            //Console.ReadLine();
+            //tree.delete(6);
+            //tree.inorder(tree.root);
+            //Console.ReadLine();
             //**// End of  Binary Search Tree code
+
+            //5. Graph
+            //**// Start of Garph code
+            //AdjListGraph graph = new AdjListGraph(4);
+            //graph.addEdge(0, 1);
+            //graph.addEdge(0, 2);
+            //graph.addEdge(0, 3);
+            //graph.addEdge(1, 2);
+            //graph.addEdge(2, 3);
+            //graph.displayGraph();
+            //Console.ReadLine();
+
+            //**// End of Graph code
+
+            //6. Sorting
+            //**// Selection Sort
+            Sorting sort = new Sorting(10);
+            sort.createRandomArray();
+            //sort.selectionSort();
+            sort.bubbleSort();
+            sort.display();
+            Console.ReadLine();
+
         }
     }
 }

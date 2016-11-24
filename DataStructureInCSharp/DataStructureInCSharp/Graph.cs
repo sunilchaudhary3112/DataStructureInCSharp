@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -49,15 +50,32 @@ namespace DataStructureInCSharp
 
             }
         }
-        public void addeEdge(int source, int dest)
+        public void addEdge(int source, int dest)
         {
             int i = Vertices.IndexOf(source);
             int j = Vertices.IndexOf(dest);
             if(i != -1 || j != -1)
             {
-
+                ListNode nodeI = new ListNode(dest);
+                ListNode nodeJ = new ListNode(source);
+                Edges[i].insertAtBegin(nodeI);
+                Edges[j].insertAtBegin(nodeJ);
             }
             
+        }
+
+        public void displayGraph()
+        {
+            for(int k = 0; k < vertexCount ; k++)
+            {
+                int ii = Vertices.IndexOf(k);
+                LinkedListL node = Edges[ii];
+                if(node.head != null)
+                {
+                    Console.Write("nodes connected to " + ii + "->");
+                    node.display();
+                }
+            }
         }
             
 
