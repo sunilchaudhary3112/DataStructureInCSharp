@@ -112,6 +112,28 @@ namespace DataStructureInCSharp
 
             //5. Graph
             //**// Start of Garph code
+            //Graph graph = new Graph();
+            //graph.addVertex('A');
+            //graph.addVertex('B');
+            //graph.addVertex('C');
+            //graph.addVertex('D');
+            //graph.addVertex('E');
+            //graph.addVertex('F');
+            //graph.addVertex('H');
+            //graph.addVertex('G');
+
+            //graph.addEdge(0, 1);
+            //graph.addEdge(1, 2);
+            //graph.addEdge(1,6);
+            ////graph.addEdge(2,1);
+            //graph.addEdge(2,3);
+            //graph.addEdge(2,4);
+            //graph.addEdge(4,6);
+            //graph.addEdge(4,5);
+            //graph.addEdge(4,7);
+            //graph.BFS();
+            //Console.ReadLine();
+
             //AdjListGraph graph = new AdjListGraph(4);
             //graph.addEdge(0, 1);
             //graph.addEdge(0, 2);
@@ -128,7 +150,11 @@ namespace DataStructureInCSharp
             Sorting sort = new Sorting(10);
             sort.createRandomArray();
             //sort.selectionSort();
-            sort.bubbleSort();
+            //sort.bubbleSort();
+            //sort.insertionSort();
+            int[] temp = new int[10];
+            //sort.mergeSort(temp, 0, 9);
+            sort.quickSort(0, 9);
             sort.display();
             Console.ReadLine();
 
